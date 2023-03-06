@@ -170,7 +170,7 @@ def run_nginx():
 def check_port(port):
     try:
         s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-        s.bind(('0.0.0.0', port))
+        s.bind(('127.0.0.1', port))
         s.close()
         return 0
     except Exception as e:

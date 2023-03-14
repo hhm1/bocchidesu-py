@@ -1,8 +1,6 @@
 import ctypes
-import sys
-
+import sys , atexit, os
 from PyQt5.QtWidgets import QApplication, QMainWindow
-
 from maindebug import MyMainWindow
 
 
@@ -34,3 +32,7 @@ class MyMainWindow(QMainWindow):
 
     def setupUi(self, self1):
         pass
+
+@atexit.register
+def runcleanhosts():
+    os.system('hosts.exe')

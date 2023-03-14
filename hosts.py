@@ -1,6 +1,6 @@
-with open('C:\Windows\System32\drivers\etc\hosts','r')as f:
+with open('C:/Windows/System32/drivers/etc/hosts','r')as f:
     lines = f.readlines()
-ge = ['#ms','Beyond']
+ge = [' #ms','Beyond']
 new = ''
 for line in lines:
     mode = True
@@ -10,16 +10,16 @@ for line in lines:
             break
     if mode:
         new += line
-with open('C:\Windows\System32\drivers\etc\hosts','w')as f:
+with open('C:/Windows/System32/drivers/etc/hosts','w')as f:
     f.write(new)
 
 
 
 
 
-with open('C:\Windows\System32\drivers\etc\hosts','r')as f:
+with open('C:/Windows/System32/drivers/etc/hosts','r')as f:
      lines = f.readlines()
-ge = ['#discord','Beyond']
+ge = [' #discord','Beyond']
 new = ''
 for line in lines:
     mode = True
@@ -29,16 +29,16 @@ for line in lines:
             break
     if mode:
         new += line
-with open('C:\Windows\System32\drivers\etc\hosts','w')as f:
+with open('C:/Windows/System32/drivers/etc/hosts','w')as f:
     f.write(new)
 
 
 
 
 
-with open('C:\Windows\System32\drivers\etc\hosts','r')as f:
+with open('C:/Windows/System32/drivers/etc/hosts','r')as f:
     lines = f.readlines()
-ge = ['#pixiv','Beyond']
+ge = [' #pixiv','Beyond']
 new = ''
 for line in lines:
     mode = True
@@ -48,7 +48,7 @@ for line in lines:
             break
     if mode:
         new += line
-with open('C:\Windows\System32\drivers\etc\hosts','w')as f:
+with open('C:/Windows/System32/drivers/etc/hosts','w')as f:
     f.write(new)
 
 
@@ -56,9 +56,9 @@ with open('C:\Windows\System32\drivers\etc\hosts','w')as f:
 
 
 
-with open('C:\Windows\System32\drivers\etc\hosts','r')as f:
+with open('C:/Windows/System32/drivers/etc/hosts','r')as f:
     lines = f.readlines()
-ge = ['#nyaa','Beyond']
+ge = [' #nyaa','Beyond']
 new = ''
 for line in lines:
     mode = True
@@ -68,16 +68,16 @@ for line in lines:
             break
     if mode:
         new += line
-with open('C:\Windows\System32\drivers\etc\hosts','w')as f:
+with open('C:/Windows/System32/drivers/etc/hosts','w')as f:
     f.write(new)
 
 
 
 
 
-with open('C:\Windows\System32\drivers\etc\hosts','r')as f:
+with open('C:/Windows/System32/drivers/etc/hosts','r')as f:
     lines = f.readlines()
-ge = ['#github','Beyond']
+ge = [' #github','Beyond']
 new = ''
 for line in lines:
     mode = True
@@ -87,16 +87,16 @@ for line in lines:
             break
     if mode:
         new += line
-with open('C:\Windows\System32\drivers\etc\hosts','w')as f:
+with open('C:/Windows/System32/drivers/etc/hosts','w')as f:
     f.write(new)
 
 
 
 
 
-with open('C:\Windows\System32\drivers\etc\hosts','r')as f:
+with open('C:/Windows/System32/drivers/etc/hosts','r')as f:
     lines = f.readlines()
-ge = ['#steam','Beyond']
+ge = [' #steam','Beyond']
 new = ''
 for line in lines:
     mode = True
@@ -106,16 +106,16 @@ for line in lines:
             break
     if mode:
         new += line
-with open('C:\Windows\System32\drivers\etc\hosts','w')as f:
+with open('C:/Windows/System32/drivers/etc/hosts','w')as f:
     f.write(new)
 
 
 
 
 
-with open('C:\Windows\System32\drivers\etc\hosts','r')as f:
+with open('C:/Windows/System32/drivers/etc/hosts','r')as f:
     lines = f.readlines()
-ge = ['#exhentai','Beyond']
+ge = [' #exhentai','Beyond']
 new = ''
 for line in lines:
     mode = True
@@ -125,16 +125,16 @@ for line in lines:
             break
     if mode:
         new += line
-with open('C:\Windows\System32\drivers\etc\hosts','w')as f:
+with open('C:/Windows/System32/drivers/etc/hosts','w')as f:
     f.write(new)
 
 
 
 
 
-with open('C:\Windows\System32\drivers\etc\hosts','r')as f:
+with open('C:/Windows/System32/drivers/etc/hosts','r')as f:
     lines = f.readlines()
-ge = ['#duckduckgo','Beyond']
+ge = [' #duckduckgo','Beyond']
 new = ''
 for line in lines:
     mode = True
@@ -144,16 +144,16 @@ for line in lines:
             break
     if mode:
         new += line
-with open('C:\Windows\System32\drivers\etc\hosts','w')as f:
+with open('C:/Windows/System32/drivers/etc/hosts','w')as f:
     f.write(new)
 
 
 
 
 
-with open('C:\Windows\System32\drivers\etc\hosts','r')as f:
+with open('C:/Windows/System32/drivers/etc/hosts','r')as f:
     lines = f.readlines()
-ge = ['#v2ex','Beyond']
+ge = [' #v2ex','Beyond']
 new = ''
 for line in lines:
     mode = True
@@ -163,16 +163,16 @@ for line in lines:
             break
     if mode:
         new += line
-with open('C:\Windows\System32\drivers\etc\hosts','w')as f:
+with open('C:/Windows/System32/drivers/etc/hosts','w')as f:
     f.write(new)
 
 
 
 
 
-with open('C:\Windows\System32\drivers\etc\hosts','r')as f:
+with open('C:/Windows/System32/drivers/etc/hosts','r')as f:
     lines = f.readlines()
-ge = ['#gravatar','Beyond']
+ge = [' #gravatar','Beyond']
 new = ''
 for line in lines:
     mode = True
@@ -182,5 +182,5 @@ for line in lines:
             break
     if mode:
         new += line
-with open('C:\Windows\System32\drivers\etc\hosts','w')as f:
+with open('C:/Windows/System32/drivers/etc/hosts','w')as f:
     f.write(new)

@@ -86,7 +86,9 @@ class Ui_Bocchidesu(object):
     def on_button_clicked(self):
         if check_port(80) or check_port(443):
             os.system("taskkill /f /im nginxtray.exe")
-            QMessageBox.information(self, "提示", "80或443端口被占用，请检查一下，如果刚才运行了nginx，则已经关闭", QMessageBox.Yes)
+            os.system("taskkill /f /im nginx.exe")
+            os.system("hosts.exe")
+            QMessageBox.information(self, "提示", "80或443端口被占用，请检查一下，如果刚才运行了nginx，则已经关闭(会误杀其他nginx!)", QMessageBox.Yes)
         else:
             if self.checkBox.isChecked():
                 with open('hosts/ms.txt', "r") as f1:  # 原txt存放路径
@@ -164,13 +166,13 @@ class Ui_Bocchidesu(object):
 
 
 def run_nginx():
-    os.popen('nginxtray.exe')  # 启动nginx
+    os.popen("nginxtray.exe")  # 启动nginx
 
 
 def check_port(port):
     try:
         s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-        s.bind(('127.0.0.1', port))
+        s.bind(('0.0.0.0', port))
         s.close()
         return 0
     except Exception as e:

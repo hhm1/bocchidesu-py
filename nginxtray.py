@@ -1,4 +1,4 @@
-import sys, os
+import sys, os, atexit
 
 from PyQt5.QtGui import QIcon
 from PyQt5.QtWidgets import QApplication, QSystemTrayIcon, QMenu
@@ -18,4 +18,8 @@ os.popen('nginx.exe')
 tray_icon.setContextMenu(menu)
 # 显示托盘图标
 tray_icon.show()
+@atexit.register
+def exitkill():
+    os.system('taskkill /f /im nginx.exe')
+    os.system('hosts.exe')
 sys.exit(app.exec_())

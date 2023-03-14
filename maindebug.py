@@ -1,7 +1,8 @@
-import bocchidesu
 import sys
 
 from PyQt5.QtWidgets import QApplication, QMainWindow
+
+import bocchidesu
 
 
 class MyMainWindow(QMainWindow, bocchidesu.Ui_Bocchidesu):

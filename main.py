@@ -1,6 +1,5 @@
 import ctypes
 import sys
-import bocchidesu
 
 from PyQt5.QtWidgets import QApplication, QMainWindow
 
@@ -8,10 +7,6 @@ from maindebug import MyMainWindow
 
 
 def is_admin():
-    """
-
-    :return:
-    """
     try:
         return ctypes.windll.shell32.IsUserAnAdmin()
     except:
@@ -36,3 +31,6 @@ class MyMainWindow(QMainWindow):
         myWin = MyMainWindow()
         myWin.show()
         sys.exit(app.exec_())
+
+    def setupUi(self, self1):
+        pass
